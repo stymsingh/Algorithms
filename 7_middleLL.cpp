@@ -42,11 +42,12 @@ int findMiddleNode(nodeptr head)
 int main()
 {
     nodeptr head = NULL;
-    head = newNode(1);
-    head->next = newNode(2);
-    head->next->next = newNode(3);
-    head->next->next->next = newNode(4);
+    head = newNode(2);
+    head->next = newNode(4);
+    head->next->next = newNode(6);
+    head->next->next->next = newNode(7);
     head->next->next->next->next = newNode(5);
+    head->next->next->next->next->next = newNode(1);
     std::cout << "\n";
     print(head);
 
